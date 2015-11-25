@@ -15,7 +15,10 @@
             <option value="$PROJECT_DIR$/button" />
             <option value="$PROJECT_DIR$/calc" />
             <option value="$PROJECT_DIR$/calc2" />
+            <option value="$PROJECT_DIR$/daily" />
             <option value="$PROJECT_DIR$/image" />
+            <option value="$PROJECT_DIR$/info" />
+            <option value="$PROJECT_DIR$/userinfo" />
           </set>
         </option>
       </GradleProjectSettings>
