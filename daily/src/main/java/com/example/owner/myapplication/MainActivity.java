@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
                         Integer.toString(dayOfMonth) + ".txt";
                 String str = readDiary(fileName);
                 edtDiary.setText(str);
-
             }
         });
 
