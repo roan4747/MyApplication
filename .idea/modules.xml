@@ -4,15 +4,17 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebView/WebView.iml" filepath="$PROJECT_DIR$/WebView/WebView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adapter/adapter.iml" filepath="$PROJECT_DIR$/adapter/adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/button/button.iml" filepath="$PROJECT_DIR$/button/button.iml" />
       <module fileurl="file://$PROJECT_DIR$/calc/calc.iml" filepath="$PROJECT_DIR$/calc/calc.iml" />
       <module fileurl="file://$PROJECT_DIR$/calc2/calc2.iml" filepath="$PROJECT_DIR$/calc2/calc2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/daily/diary.iml" filepath="$PROJECT_DIR$/daily/diary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daily/daily.iml" filepath="$PROJECT_DIR$/daily/daily.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db/db.iml" filepath="$PROJECT_DIR$/db/db.iml" />
       <module fileurl="file://$PROJECT_DIR$/image/image.iml" filepath="$PROJECT_DIR$/image/image.iml" />
       <module fileurl="file://$PROJECT_DIR$/info/info.iml" filepath="$PROJECT_DIR$/info/info.iml" />
       <module fileurl="file://$PROJECT_DIR$/info/info.iml" filepath="$PROJECT_DIR$/info/info.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mydaily/mydiary.iml" filepath="$PROJECT_DIR$/mydaily/mydiary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mydaily/mydaily.iml" filepath="$PROJECT_DIR$/mydaily/mydaily.iml" />
       <module fileurl="file://$PROJECT_DIR$/userinfo/userinfo.iml" filepath="$PROJECT_DIR$/userinfo/userinfo.iml" />
     </modules>
   </component>

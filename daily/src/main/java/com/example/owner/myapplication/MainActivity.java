@@ -32,12 +32,14 @@ public class MainActivity extends AppCompatActivity {
         edtDiary = (EditText) findViewById(R.id.edtDiary);
         btnWrite = (Button) findViewById(R.id.btnWrite);
 
+        btnWrite.setEnabled(true);
+
         Calendar cal = Calendar.getInstance();
         int cYear = cal.get(Calendar.YEAR);
         int cMonth = cal.get(Calendar.MONTH);
         int cDay = cal.get(Calendar.DAY_OF_MONTH);
 
-        FileInputStream inFs;
+        edtDiary.setText(readDiary(cYear + "_" +(cMonth+1)+ "_" + cDay+ ".txt"));  //오늘의 일기를 보여줌
 
         dp.init(cYear, cMonth, cDay, new DatePicker.OnDateChangedListener() {
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
@@ -48,30 +50,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        try {
-            String Str1;
-            inFs = openFileInput(cYear + "_" + (cMonth + 1) + "_" + cDay + ".txt");
-            byte[] txt = new byte[500];
-            inFs.read(txt);
-            inFs.close();
-            Str1 = (new String(txt)).trim();
-            btnWrite.setText("수정하기");
-            edtDiary.setText(Str1);
-
-        } catch (IOException e) {
-            edtDiary.setHint("일기 없음");
-            btnWrite.setText("새로 저장");
-        }
-        btnWrite.setEnabled(true);
-
-
-
         btnWrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
                     FileOutputStream outFs = openFileOutput(fileName, Context.MODE_WORLD_WRITEABLE);
                     String str = edtDiary.getText().toString();
+                    edtDiary.setText(str);
                     outFs.write(str.getBytes());
                     outFs.close();
                     Toast.makeText(getApplicationContext(), fileName + "이 저장됨", Toast.LENGTH_SHORT).show();
@@ -98,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return diaryStr;
     }
+
 
 
     @Override
